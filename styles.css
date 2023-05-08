@@ -1,0 +1,16 @@
+.personal-links {
+    background-color: rgb(155, 193, 255);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px 15px 15px 15px;
+    transition: opacity 0.25s;
+}
+
+.personal-links:hover {
+    opacity: 0.8;
+}
+
+.personal-links:active {
+    opacity: 0.5;
+}
