@@ -1,16 +1,57 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+section {
+    padding: 2em 5em;
+}
+
 p {
     font-family: Montserrat;
     font-size: 30px;
     text-align: center;
-    color: blue;
+    color: rgb(10, 134, 61);
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    display: block;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(10, 134, 61);
+}
+
+.profile-mugshot {
+    border-radius: 50%;
+    border: 3px dashed;
+    border-color: black;
+    width: 200px;
+}
+
+.nice-guy-line {
+    position: relative;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.me {
+    background-color: rgb(0,32,91);
+}
+
+.link-line {
+    text-align: center;
 }
 
 .personal-links {
-    background-color: rgb(155, 193, 255);
+    background-color: rgb(255, 255, 255);
     color: white;
-    border: none;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
     cursor: pointer;
     padding: 15px 15px 15px 15px;
     transition: opacity 0.25s;
