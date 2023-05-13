@@ -1,3 +1,7 @@
+/*
+use * to reset some default values later
+*/
+
 html {
     scroll-behavior: smooth;
 }
@@ -152,8 +156,31 @@ h3 {
     text-align: center;
 }
 
-.profile-mugshot {
+.card {
     display: inline-block;
+    align-self: center;
+    vertical-align: middle;
+    padding-right: 20px;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.card__inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+
+.card__inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.profile-mugshot {
     border-radius: 25%;
     border: 3px dashed;
     border-color: black;
@@ -161,11 +188,22 @@ h3 {
     align-self: center;
 }
 
-.intro-zeug {
-    display: inline-block;
+.intro-zeug,
+.intro-zeug-troll {
     align-self: center;
-    vertical-align: middle;
-    padding-right: 20px;
+    vertical-align: bottom;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+    position: absolute;
+}
+
+.intro-zeug {
+    backface-visibility: hidden;
+}
+
+.intro-zeug-troll {
+    transform: rotateY(180deg);
 }
 
 .nice-guy-line {
