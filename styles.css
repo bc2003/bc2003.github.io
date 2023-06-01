@@ -56,6 +56,10 @@ p {
     color: white;
 }
 
+a {
+    color: rgb(255, 255, 255);
+}
+
 a:hover {
     color: rgb(255, 255, 255);
 }
@@ -125,15 +129,20 @@ header {
     font-family: "Montserrat", sans-serif;
     font-size: 25px;
     text-align: center;
-    border-color: rgb(0, 32, 91);
+    border-color: rgb(0, 0, 0);
     border-width: 1px;
     font-weight: 900;
     background-color: rgb(255, 255, 255);
-    transition: letter-spacing 0.25s;
+    transition: letter-spacing 0.25s, opacity 0.25s;
 }
 
 .nav-button:hover {
     letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+.nav-button:active {
+    opacity: 0.5;
 }
 
 .intro {
@@ -251,6 +260,13 @@ h3 {
 
 .personal-links:active {
     opacity: 0.5;
+}
+
+.link-buttons {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
 }
 
 .wex-section{
