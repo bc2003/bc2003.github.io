@@ -204,9 +204,9 @@ h3 {
 }
 
 .profile-mugshot {
-    border-radius: 25%;
-    border: 3px dashed;
-    border-color: black;
+    border-width: 3px;
+    border-image: linear-gradient(rgb(10, 134, 61), rgb(0, 32, 91)) 30;
+    border-style: solid;
     width: 300px;
     align-self: center;
 }
