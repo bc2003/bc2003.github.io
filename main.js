@@ -23,11 +23,6 @@ carouselChildrens.slice(0, projPerView).forEach(project => {
     carousel.insertAdjacentHTML("beforeend", project.outerHTML);
 });
 
-// // Scroll the carousel at appropriate postition to hide first few duplicate projects
-// carousel.classList.add("no-transition");
-// carousel.scrollLeft = carousel.offsetWidth;
-// carousel.classList.remove("no-transition");
-
 // Add event listeners for the arrow buttons to scroll the carousel left and right
 arrowBtns.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -53,13 +48,4 @@ const infiniteScroll = () => {
     if(!wrapper.matches(":hover")) autoPlay();
 }
 
-// const autoPlay = () => {
-//     if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
-//     // Autoplay the carousel after every 2500 ms
-//     timeoutId = setTimeout(() => carousel.scrollLeft += firstProjectWidth, 2500);
-// }
-// autoPlay();
-
 carousel.addEventListener("scroll", infiniteScroll);
-// wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-// wrapper.addEventListener("mouseleave", autoPlay);
