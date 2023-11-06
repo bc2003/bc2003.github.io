@@ -40,7 +40,8 @@ const infiniteScroll = () => {
     // If the carousel is at the end, scroll to the beginning
     else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
         carousel.classList.add("no-transition");
-        carousel.scrollLeft = carousel.offsetWidth;
+        carousel.scrollLeft = 0;
+        carousel.scrollLeft += carousel.offsetWidth;
         carousel.classList.remove("no-transition");
     }
     // Clear existing timeout & start autoplay if mouse is not hovering over carousel
