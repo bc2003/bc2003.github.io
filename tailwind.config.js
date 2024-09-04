@@ -8,6 +8,11 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+        "cnblue": "#00205B",
+        "cngreen": "#00843D",
+        "cnnavy": "#041C2C",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
