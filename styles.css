@@ -29,10 +29,8 @@ section {
     padding: 2em 5em;
     border-radius: 10px;
     text-align: center;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 8px auto;
+    max-width: 1400px;
 }
 
 img {
@@ -146,7 +144,7 @@ header {
 }
 
 .intro {
-    display: inline-block;
+    display: block;
 }
 
 h1 {
