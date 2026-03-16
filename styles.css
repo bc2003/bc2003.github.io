@@ -378,10 +378,10 @@ h4 {
 
 .projects-section {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    min-height: 75vh;
-    padding: 0 35px;
+    min-height: auto;
+    padding: 20px 35px;
 }
 
 .wrapper {
